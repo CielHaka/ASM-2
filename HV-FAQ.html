@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvestly - FAQ</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/faq.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--icon-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Login Popup -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <h2> Login </h2>
+            <label for="user"> Username </label> <br>
+            <input type="text" id="user" name="username"> <br> <br>
+            <label for="useremail"> Email </label> <br>
+            <input type="email" name="user email" id="useremail"> <br><br>
+            <label for="pass"> Password </label> <br>
+            <input type="password" id="pass" name="password"> <br> <br>
+            <button id="submit-btn"> Login </button>
+        </div>
+
+    </div>
+    <!--Login Jquery-->
+    <script>
+        $(document).ready(function () {
+
+            //open model
+            $('#accountBtn').click(function () {
+                $('#login-modal').fadeIn(200)
+            })
+
+            //close when click icon
+            $('#close').click(function(){
+                $('#login-modal').fadeOut(200)
+            })
+
+            //click supmit only close popup
+            $('#submit-btn').click(function(){
+                $('#login-modal').fadeOut(200)
+            })
+
+        })
+
+    </script>
+
+    <!--Navbar-->
+    <div class="nav-bar">
+        <img src="imgs/logo.svg" alt="Harvestly" width="233" height="51">
+        <div class="menu">
+            <a href="HV-Main.html" target="_blank"> Home </a>
+            <a href="#"> About </a>
+            <a href="HV-Product.html" target="_blank"> Product </a>
+            <a href="HV-FAQ.html" target="_blank"> FAQ </a>
+        </div>
+        <div class="nav-icons">
+            <div class="btn-icon">
+                <span class="material-icons">search</span>
+            </div>
+            <a href="HV-Checkout.html" target="_blank" class="btn-icon">
+                <span class="material-icons">shopping_cart</span>
+            </a>
+            <div class="btn-icon" id="accountBtn" >
+                <span class="material-icons">account_circle</span>
+            </div>
+        </div>v>
+    </div>
+    </div>
+
+    <!--Title-->
+    <div class="title">
+        <h2> Got Questions? We've Got Answers! </h2>
+        <p> Everything you need to know about our products, delivery, and sustainability </p>
+    </div>
+
+    <!--FAQ-->
+    <div class="faq">
+        <h3 id="faq-title"> <span class="material-icons">help</span> Frequently Asked Questions </h3>
+        <div class="QA-box">
+            <div class="q-type">
+                <div class="q-btn">
+                    <h3> Order </h3>
+                </div>
+
+                <div class="q-btn">
+                    <h3> Delivery </h3>
+                </div>
+
+                <div class="q-btn">
+                    <h3> Product </h3>
+                </div>
+
+                <div class="q-btn">
+                    <h3> Payment </h3>
+                </div>
+            </div>
+
+            <!--faq box-->
+            <div class="faq-box">
+                <details>
+                    <summary>How do I place an order on Harvestly?</summary>
+                    <p>Simply browse our products, add favorites to the cart, and proceed to checkout...</p>
+                </details>
+
+                <details>
+                    <summary>Can I change or cancel my order after placing it?</summary>
+                    <p>You can change or cancel your order by contacting us before the order is shipped.</p>
+                </details>
+
+                <details>
+                    <summary>How long will it take for my order to arrive?</summary>
+                    <p>Orders typically arrive within 3-5 business days depending on location.</p>
+                </details>
+
+                <details>
+                    <summary>What if I receive damaged or spoiled items?</summary>
+                    <p>If you receive damaged goods, please reach out within 24 hours for assistance.</p>
+                </details>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--newsetter-->
+    <div class="new-set">
+        <h2> Stay Fresh with Harvestly </h2>
+        <p> Join our newsletter for weekly tips, recipes, and seasonal deals. </p>
+        <br><br>
+        <div class="email-box">
+            <input type="email" placeholder="Your email here" id="email" name="email">
+            <a href="#" class="btn"> Subscribe Now </a>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="logo-f">
+            <img src="imgs/logo.svg" alt="Harvestly" width="233" height="51">
+            <ul>
+                <li> Facebook </li>
+                <li> X </li>
+                <li> Instagram </li>
+            </ul>
+            <p id="credit"> @2025 Harvestly. All rights reversed. </p>
+        </div>
+
+        <div class="info-f">
+            <h3 class="footer-title"> Quick Link </h3>
+            <ul>
+                <li> Home </li>
+                <li> Product </li>
+                <li> About Us </li>
+                <li> FAQ </li>
+                <li> Check out </li>
+            </ul>
+
+        </div>
+
+        <div class="info-f">
+            <h3 class="footer-title"> Policies & Info </h3>
+            <ul>
+                <li> Terms & Conditions </li>
+                <li> Privacy Policy </li>
+                <li> Payment Methods </li>
+                <li> Social Media </li>
+            </ul>
+
+        </div>
+
+        <div class="info-f">
+            <h3 class="footer-title"> Contact Us </h3>
+            <ul>
+                <li> <a href="tel: +849012345678"> Phone: +84 90 1234 5678 </a> </li>
+                <li> <a href="mailto:hello@midoriorigin.com"> Gmail: hello@Harvestly.com </a> </li>
+                <li> Adderest: 123 Green Road, Local Farm District </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

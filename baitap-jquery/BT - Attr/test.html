@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <img id="main-IMG" src="imgs/69db81697a8f9a5cdcfabd9b52b70e80.jpg" width="500" height="320">
+    <br>
+    <button id="btn-change"> Change Picture </button>
+
+    <!--Jquery-->
+
+    
+    <script>
+        $(document).ready(function() {
+
+            $("#btn-change").click(function(){
+                $("#main-IMG").attr("src","imgs/f4a17f1df1555d9383f7becfbf4f65c4.jpg");
+            });
+            
+        });
+    </script>
+    
+<!--test
+    <script>
+        $(document).ready(function() {
+
+            $("#btn-change").hover
+            (function(){ //mouse enter
+                $("#main-IMG").attr("src","imgs/f4a17f1df1555d9383f7becfbf4f65c4.jpg");
+            },
+            function(){ //mouse leave
+               $("#main-IMG").attr("src","imgs/69db81697a8f9a5cdcfabd9b52b70e80.jpg"); 
+            }
+        );
+            
+        });
+    </script>
+    -->
+    
+</body>
+</html>

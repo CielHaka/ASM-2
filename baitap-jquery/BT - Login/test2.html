@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="btn-login"> Login </button>
+
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <h2> Login </h2>
+            <label for="user"> Username </label> <br>
+            <input type="text" id="user" name="username"> <br> <br>
+            <label for="pass"> Password </label> <br>
+            <input type="password" id="pass" name="password"> <br> <br>
+            <button id="submit-btn"> Submit</button>
+        </div>
+
+    </div>
+
+    <!--jquery-->
+    <script>
+        $(document).ready(function () {
+
+            //open model
+            $('#btn-login').click(function () {
+                $('#login-modal').fadeIn(200)
+            })
+
+            //close when click icon
+            $('#close').click(function(){
+                $('#login-modal').fadeOut(200)
+            })
+
+            //click supmit only close popup
+            $('#submit-btn').click(function(){
+                $('#login-modal').fadeOut(200)
+            })
+
+        })
+
+    </script>
+
+</body>
+
+</html>

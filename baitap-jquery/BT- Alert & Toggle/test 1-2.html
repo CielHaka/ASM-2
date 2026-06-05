@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!--test alert-->
+    <button id="btn"> Click Me! </button>
+
+    
+
+    <!--test show and hide-->
+
+    <p id="hide_content"> This is a hiden content </p>
+    <button id="toggle-btn"> Hide / Show </button>
+
+    <!--test two btn hide and show-->
+
+    <p id="test-content"> Click Hide to make me disappear or Show to see me again! </p>
+    <button id="hide"> Hide </button>
+    <button id="show"> Show </button>
+
+    <script>
+        $('#btn').click(function() {alert ('Press OK to format your hard disk :D !')})
+
+        $('#toggle-btn').click(function() { $('#hide_content').toggle()})
+
+        $('#hide').click(function() { $('#test-content').hide()})
+        $('#show').click(function() { $('#test-content').show()})
+    </script>
+
+</body>
+
+</html>

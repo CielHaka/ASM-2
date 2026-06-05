@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvestly - Product</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/product.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--icon-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Login Popup -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <h2> Login </h2>
+            <label for="user"> Username </label> <br>
+            <input type="text" id="user" name="username"> <br> <br>
+            <label for="useremail"> Email </label> <br>
+            <input type="email" name="user email" id="useremail"> <br><br>
+            <label for="pass"> Password </label> <br>
+            <input type="password" id="pass" name="password"> <br> <br>
+            <button id="submit-btn"> Login </button>
+        </div>
+
+    </div>
+    <!--Login Jquery-->
+    <script>
+        $(document).ready(function () {
+
+            //open model
+            $('#accountBtn').click(function () {
+                $('#login-modal').fadeIn(200)
+            })
+
+            //close when click icon
+            $('#close').click(function () {
+                $('#login-modal').fadeOut(200)
+            })
+
+            //click supmit only close popup
+            $('#submit-btn').click(function () {
+                $('#login-modal').fadeOut(200)
+            })
+
+        })
+
+    </script>
+
+    <!--Navbar-->
+    <div class="nav-bar">
+        <img src="imgs/logo.svg" alt="Harvestly" width="233" height="51">
+        <div class="menu">
+            <a href="HV-Main.html" target="_blank"> Home </a>
+            <a href="#"> About </a>
+            <a href="HV-Product.html" target="_blank"> Product </a>
+            <a href="HV-FAQ.html" target="_blank"> FAQ </a>
+        </div>
+        <div class="nav-icons">
+            <div class="btn-icon">
+                <span class="material-icons">search</span>
+            </div>
+            <a href="HV-Checkout.html" target="_blank" class="btn-icon">
+                <span class="material-icons">shopping_cart</span>
+            </a>
+            <div class="btn-icon" id="accountBtn">
+                <span class="material-icons">account_circle</span>
+            </div>
+        </div>
+    </div>
+
+    <!--herosection-->
+    <div class="hero-title">
+        <h1 id="title1"> Product </h1>
+    </div>
+
+    <!--search bar-->
+    <div class="search-bar">
+        <input type="search" placeholder="Product name..." id="search" name="search">
+        <a href="#" class="btn"> Search </a>
+    </div>
+
+    <!--filter bar-->
+    <div class="filter-bar">
+        <h2 id="filter-title"> <span class="material-icons">filter_alt</span> Filter </h2>
+        <div class="filter-cont">
+            <a href="#" class="btn"> All </a>
+            <a href="#" class="btn-line"> Fruit </a>
+            <a href="#" class="btn-line"> Vegetable </a>
+            <a href="#" class="btn-line"> Newest </a>
+            <a href="#" class="btn-line"> Price </a>
+            <a href="#" class="btn-line"> Seasonal Picks </a>
+        </div>
+    </div>
+
+    <!--product-->
+    <div class="product">
+
+        <!--c1-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-spi.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Green Spinach </h3>
+                <p> Leafy Green, Fresh Picked, Organic </p>
+            </div>
+            <div class="price">
+                <h3> $1.75 / bunch </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="#" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+        <!--c2-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-ap.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Fuji Apple </h3>
+                <p> Fuirt, Summer Harvest, Local </p>
+            </div>
+            <div class="price">
+                <h3> $3.20 / lb </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="HV-Product_Detail.html" target="_blank" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+        <!--c3-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-ap.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Sweet Potatoes </h3>
+                <p> FRoot Vegetable, Farm Fresh, Bestseller </p>
+            </div>
+            <div class="price">
+                <h3> $1.20 / lb </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="#" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+        <!--c1-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-spi.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Green Spinach </h3>
+                <p> Leafy Green, Fresh Picked, Organic </p>
+            </div>
+            <div class="price">
+                <h3> $1.75 / bunch </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="#" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+        <!--c2-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-ap.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Fuji Apple </h3>
+                <p> Fuirt, Summer Harvest, Local </p>
+            </div>
+            <div class="price">
+                <h3> $3.20 / lb </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="HV-Product_Detail.html" target="_blank" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+        <!--c3-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-ap.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Sweet Potatoes </h3>
+                <p> FRoot Vegetable, Farm Fresh, Bestseller </p>
+            </div>
+            <div class="price">
+                <h3> $1.20 / lb </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="#" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+        <!--c1-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-spi.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Green Spinach </h3>
+                <p> Leafy Green, Fresh Picked, Organic </p>
+            </div>
+            <div class="price">
+                <h3> $1.75 / bunch </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="#" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+        <!--c2-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-ap.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Fuji Apple </h3>
+                <p> Fuirt, Summer Harvest, Local </p>
+            </div>
+            <div class="price">
+                <h3> $3.20 / lb </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="HV-Product_Detail.html" target="_blank" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+        <!--c3-->
+        <div class="pro-card">
+            <img src="imgs/pro-card-ap.svg" alt="product pic" width="368" height="272">
+            <div class="name-tag">
+                <h3> Sweet Potatoes </h3>
+                <p> FRoot Vegetable, Farm Fresh, Bestseller </p>
+            </div>
+            <div class="price">
+                <h3> $1.20 / lb </h3>
+            </div>
+            <div class="btn-cont">
+                <a href="#" class="btn-line"> Add to cart </a>
+                <a href="#" class="btn"> Buy now </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--turnpage-->
+
+    <div class="turn-p">
+        <div class="btn-icon-r">
+            <span class="material-icons">keyboard_arrow_left</span>
+        </div>
+        <div id="number-p">
+            <h4> 1/15 </h4>
+        </div>
+        <div class="btn-icon-r">
+            <span class="material-icons">keyboard_arrow_right</span>
+        </div>
+    </div>
+
+    <!--newsetter-->
+    <div class="new-set">
+        <h2> Stay Fresh with Harvestly </h2>
+        <p> Join our newsletter for weekly tips, recipes, and seasonal deals. </p>
+        <br><br>
+        <div class="email-box">
+            <input type="email" placeholder="Your email here" id="email" name="email">
+            <a href="#" class="btn"> Subscribe Now </a>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="logo-f">
+            <img src="imgs/logo.svg" alt="Harvestly" width="233" height="51">
+            <ul>
+                <li> Facebook </li>
+                <li> X </li>
+                <li> Instagram </li>
+            </ul>
+            <p id="credit"> @2025 Harvestly. All rights reversed. </p>
+        </div>
+
+        <div class="info-f">
+            <h3 class="footer-title"> Quick Link </h3>
+            <ul>
+                <li> Home </li>
+                <li> Product </li>
+                <li> About Us </li>
+                <li> FAQ </li>
+                <li> Check out </li>
+            </ul>
+
+        </div>
+
+        <div class="info-f">
+            <h3 class="footer-title"> Policies & Info </h3>
+            <ul>
+                <li> Terms & Conditions </li>
+                <li> Privacy Policy </li>
+                <li> Payment Methods </li>
+                <li> Social Media </li>
+            </ul>
+
+        </div>
+
+        <div class="info-f">
+            <h3 class="footer-title"> Contact Us </h3>
+            <ul>
+                <li> <a href="tel: +849012345678"> Phone: +84 90 1234 5678 </a> </li>
+                <li> <a href="mailto:hello@midoriorigin.com"> Gmail: hello@Harvestly.com </a> </li>
+                <li> Adderest: 123 Green Road, Local Farm District </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
